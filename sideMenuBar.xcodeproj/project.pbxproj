@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BC7B4ABF0E20E83660CB9CA /* Pods_sideMenuBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63498C082BC428570C34C505 /* Pods_sideMenuBar.framework */; };
 		D6889CF62655B9480072C715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6889CF52655B9480072C715 /* AppDelegate.swift */; };
 		D6889CF82655B9480072C715 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6889CF72655B9480072C715 /* SceneDelegate.swift */; };
 		D6889CFA2655B9480072C715 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6889CF92655B9480072C715 /* ViewController.swift */; };
 		D6889CFD2655B9480072C715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6889CFB2655B9480072C715 /* Main.storyboard */; };
 		D6889CFF2655B94C0072C715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6889CFE2655B94C0072C715 /* Assets.xcassets */; };
 		D6889D022655B94C0072C715 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6889D002655B94C0072C715 /* LaunchScreen.storyboard */; };
+		D6889D0E2655C79D0072C715 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6889D0D2655C79C0072C715 /* MenuViewController.swift */; };
+		D6889D112655C8170072C715 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6889D102655C8170072C715 /* InfoViewController.swift */; };
+		D6889D142655C8230072C715 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6889D132655C8230072C715 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63498C082BC428570C34C505 /* Pods_sideMenuBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sideMenuBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6889CF22655B9480072C715 /* sideMenuBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sideMenuBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6889CF52655B9480072C715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6889CF72655B9480072C715 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		D6889CFE2655B94C0072C715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6889D012655B94C0072C715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6889D032655B94C0072C715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6889D0D2655C79C0072C715 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		D6889D102655C8170072C715 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		D6889D132655C8230072C715 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E8A5514D16FB5DFC95AFD2C4 /* Pods-sideMenuBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sideMenuBar.debug.xcconfig"; path = "Target Support Files/Pods-sideMenuBar/Pods-sideMenuBar.debug.xcconfig"; sourceTree = "<group>"; };
+		FE2A88212101C2C3BE352EAB /* Pods-sideMenuBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sideMenuBar.release.xcconfig"; path = "Target Support Files/Pods-sideMenuBar/Pods-sideMenuBar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC7B4ABF0E20E83660CB9CA /* Pods_sideMenuBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28B8E173F070126C2FAEFE64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8A5514D16FB5DFC95AFD2C4 /* Pods-sideMenuBar.debug.xcconfig */,
+				FE2A88212101C2C3BE352EAB /* Pods-sideMenuBar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D6889CE92655B9480072C715 = {
 			isa = PBXGroup;
 			children = (
 				D6889CF42655B9480072C715 /* sideMenuBar */,
 				D6889CF32655B9480072C715 /* Products */,
+				28B8E173F070126C2FAEFE64 /* Pods */,
+				FDAFDEB95FC356E4186986F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +85,19 @@
 				D6889CFE2655B94C0072C715 /* Assets.xcassets */,
 				D6889D002655B94C0072C715 /* LaunchScreen.storyboard */,
 				D6889D032655B94C0072C715 /* Info.plist */,
+				D6889D0D2655C79C0072C715 /* MenuViewController.swift */,
+				D6889D102655C8170072C715 /* InfoViewController.swift */,
+				D6889D132655C8230072C715 /* SettingsViewController.swift */,
 			);
 			path = sideMenuBar;
+			sourceTree = "<group>";
+		};
+		FDAFDEB95FC356E4186986F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63498C082BC428570C34C505 /* Pods_sideMenuBar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6889D062655B94C0072C715 /* Build configuration list for PBXNativeTarget "sideMenuBar" */;
 			buildPhases = (
+				BB484CD446191969C965D439 /* [CP] Check Pods Manifest.lock */,
 				D6889CEE2655B9480072C715 /* Sources */,
 				D6889CEF2655B9480072C715 /* Frameworks */,
 				D6889CF02655B9480072C715 /* Resources */,
+				8842DACE656E45C1B31064A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +167,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8842DACE656E45C1B31064A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sideMenuBar/Pods-sideMenuBar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sideMenuBar/Pods-sideMenuBar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sideMenuBar/Pods-sideMenuBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB484CD446191969C965D439 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sideMenuBar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6889CEE2655B9480072C715 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +217,9 @@
 				D6889CFA2655B9480072C715 /* ViewController.swift in Sources */,
 				D6889CF62655B9480072C715 /* AppDelegate.swift in Sources */,
 				D6889CF82655B9480072C715 /* SceneDelegate.swift in Sources */,
+				D6889D0E2655C79D0072C715 /* MenuViewController.swift in Sources */,
+				D6889D112655C8170072C715 /* InfoViewController.swift in Sources */,
+				D6889D142655C8230072C715 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +363,7 @@
 		};
 		D6889D072655B94C0072C715 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A5514D16FB5DFC95AFD2C4 /* Pods-sideMenuBar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +382,7 @@
 		};
 		D6889D082655B94C0072C715 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE2A88212101C2C3BE352EAB /* Pods-sideMenuBar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
